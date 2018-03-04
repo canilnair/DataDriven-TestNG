@@ -1,0 +1,18 @@
+<suite name="AnilTestSuite1">
+	<test name="ExpediaSearchPage" preserve-order="true">
+		<groups>
+			<define name = "Audi and SUV">
+				<include name = "SUV"></include>
+				<include name = "Audi"></include>
+				<include name = "BMW"></include>
+			</define>
+			<run>
+				<include name = "Audi and SUV"></include>				
+			</run>
+		</groups>
+		<classes>
+			<class name="com.anil.framework.DataDriven.Test_TestNG_Grouping">
+			</class>
+		</classes>
+	</test>
+</suite>

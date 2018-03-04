@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DateDriver]">
+  <parameter name="origin" value="New York"/>
+  <parameter name="dest" value="Chicago"/>
+  <parameter name="retDate" value="10/30/2016"/>
+  <parameter name="depDate" value="10/21/2016"/>
+  <test name="DataDriver(failed)">
+    <parameter name="origin" value="New York"/>
+    <parameter name="dest" value="Chicago"/>
+    <parameter name="retDate" value="10/30/2016"/>
+    <parameter name="depDate" value="10/21/2016"/>
+    <classes>
+      <class name="com.anil.framework.DataDriven.TestNG_DataDriver">
+        <methods>
+          <include name="searchFlightsWithMultiData"/>
+          <include name="after"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- com.anil.framework.DataDriven.TestNG_DataDriver -->
+    </classes>
+  </test> <!-- DataDriver(failed) -->
+</suite> <!-- Failed suite [DateDriver] -->

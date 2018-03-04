@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [TestSuite]" parallel="classes">
+  <parameter name="browserType" value="Chrome"/>
+  <test name="Chrome Test(failed)" parallel="classes">
+    <parameter name="browserType" value="Chrome"/>
+    <classes>
+      <class name="com.anil.framework.DataDriven.TestNG_DataDriver2">
+        <methods>
+          <include name="before"/>
+          <include name="after"/>
+          <include name="before"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- com.anil.framework.DataDriven.TestNG_DataDriver2 -->
+      <class name="com.anil.framework.DataDriven.multithreaded_anil2">
+        <methods>
+          <include name="after"/>
+          <include name="googleTest"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- com.anil.framework.DataDriven.multithreaded_anil2 -->
+      <class name="com.anil.framework.DataDriven.multithreaded_anil">
+        <methods>
+          <include name="after"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- com.anil.framework.DataDriven.multithreaded_anil -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

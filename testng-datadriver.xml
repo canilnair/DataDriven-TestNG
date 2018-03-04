@@ -1,0 +1,16 @@
+<suite name="DateDriver">
+	<test name="DataDriver" preserve-order="true">
+		<parameter name = "origin" value = "New York" />
+		<parameter name = "dest" value = "Chicago" />
+		<parameter name = "depDate" value = "10/21/2016" />
+		<parameter name = "retDate" value = "10/30/2016" />
+		<classes>
+			<class name="com.anil.framework.DataDriven.TestNG_DataDriver">
+				<methods>
+					<exclude name="searchFlights"></exclude>
+					<include name="searchFlightsWithMultiData"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,14 @@
+<suite name = "TestNG Suite" parallel = "classes" thread-count="2">
+	<test name = "Firefox Test">
+		<parameter name = "browserType" value ="Firefox" />
+		<classes>
+			<class name="com.anil.framework.DataDriven.TestNG_MultiBrowserAndParallelTest" />
+		</classes>
+	</test>
+	<test name = "Chrome Test">
+		<parameter name = "browserType" value ="Chrome" />
+		<classes>
+			<class name="com.anil.framework.DataDriven.TestNG_MultiBrowserAndParallelTest" />
+		</classes>
+	</test>
+</suite>

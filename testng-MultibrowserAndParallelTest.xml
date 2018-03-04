@@ -1,0 +1,17 @@
+	<suite name = "TestSuite" parallel = "classes" thread-count="3">
+	<test name = "Firefox Test">
+		<parameter name = "browserType" value ="Firefox" />
+		<classes>
+			<class name="com.anil.framework.DataDriven.TestNG_DataDriver2" />
+			<class name="com.anil.framework.DataDriven.multithreaded_anil" />
+		</classes>
+	</test>
+	<test name = "Chrome Test">
+		<parameter name = "browserType" value ="Chrome" />
+		<classes>
+			<class name="com.anil.framework.DataDriven.multithreaded_anil2" />
+			<class name="com.anil.framework.DataDriven.TestNG_DataDriver2" />
+		</classes>
+	</test>
+
+</suite>

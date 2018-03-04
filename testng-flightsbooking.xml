@@ -1,0 +1,12 @@
+<suite name="AnilTestSuite1">
+	<test name="ExpediaSearchPage" preserve-order="true">
+		<classes>
+			<class name="com.anil.framework.DataDriven.Test_FlightsBooking">
+				<methods>
+					<include name="packageDealsFlyingToSelect"></include>
+					<exclude name="packageDealsFlyingFromSelect"></exclude>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
